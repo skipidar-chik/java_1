@@ -17,7 +17,7 @@ public class Main {
 
         for (float i = A; i <= B; i++) {
             for (float j = N; j <= M; j++) {
-                    if (i != C) S += (i + j) / (i / C);
+                 S += (i + j) / (i / C);
             }
         }
 
