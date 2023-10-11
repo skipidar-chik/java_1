@@ -5,14 +5,19 @@ public class Main {
         final float A = 1; // Початкове значення A
         final float N = 1; // Початкове значення N
 
-        final float B = 7; // Кінцеве значення B
-        final float M = 8; // Кінцеве значення M
+        final float B = 6; // Кінцеве значення B
+        final float M = 7; // Кінцеве значення M
+
+        if (A > B || N > M) {
+            System.out.println("Початкові значення не можуть бути більшими за кінцеві");
+            return;
+        }
 
         float S = 0;
 
         for (float i = A; i <= B; i++) {
             for (float j = N; j <= M; j++) {
-                if (i != C) S += (i + j) / (i / C);
+                    if (i != C) S += (i + j) / (i / C);
             }
         }
 
